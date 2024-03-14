@@ -19,9 +19,9 @@ class Cursos(admin.ModelAdmin):                                         #criei u
 
 admin.site.register(Curso,Cursos)                                       #sobe a classe Cursos para o adm
 
-class Matriculas(admin.ModelAdmin):
+class Matriculas(admin.ModelAdmin):                                     #criei uma classe que fará a visualização|alteração dos objetos da classe|tabble Matricula na página adm
     list_display = ('id','aluno','curso','periodo')
     list_display_links = ('id',)
     search_fields = ('aluno',)
 
-admin.site.register(Matricula,Matriculas)
+admin.site.register(Matricula,Matriculas)                              #sobe a classe Cursos para o adm
